@@ -1,0 +1,26 @@
+homeassistant:
+  customize:
+    package.node_anchors:
+      customize: &customize
+        package: 'Push Update PKG Domhouse.it V 1.0'
+        author: 'Salvatore Lentini'
+        reference: ' WebSite: www.domhouse.it '
+
+sensor:
+  - platform: rest
+    name: Domhouse.it
+    icon: mdi:home-group
+    json_attributes:
+      - centro_controllo_posta
+      - statistiche_ha
+      - centro_controllo_differenziata
+      - centro_controllo_db
+      - broadlink_manager
+      - calendar_notify
+      - centro_controllo_energia_ftv
+      - centro_controllo_energia_pro
+      - centro_controllo_energia_lite
+      - stato_dispositivi
+    resource: https://pastebin.com/raw/PCiVYP4Z
+    value_template: "Update Tools 1.0"
+    scan_interval: 43200
