@@ -25,6 +25,9 @@ sensor:
     value_template: "Update Tools 1.0"
     scan_interval: 43200
 
+downloader:
+  download_dir: packages
+
 script:
   scarica_pkg:
     sequence:
