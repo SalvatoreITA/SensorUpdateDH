@@ -59,7 +59,7 @@ script:
           message: 'Aggiorno Lista Sensori'
       - service: downloader.download_file
         data:
-          url: 'https://raw.githubusercontent.com/SalvatoreITA/SensorUpdateDH/main/update_pkg_domhouse_it.yaml'
+          url: 'https://raw.githubusercontent.com/SalvatoreITA/SensorUpdateDH/main/push_update_pkg.yaml'
           overwrite: true
       - delay: 5
       - service: notify.persistent_notification
